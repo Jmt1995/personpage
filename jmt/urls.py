@@ -27,7 +27,7 @@ from django.conf.urls.static import static
 from jmtperson.views import *
 urlpatterns = [
     url('admin/', admin.site.urls),
-    url(r'^jmt', index),
+    url(r'', index),
 
 
     url(r'^static/(?P<path>.*)$',django.views.static.serve,{'document_root':settings.STATIC_ROOT})
